@@ -18,7 +18,8 @@ func TestGetAPIKey(t *testing.T) {
 func validCheck(t *testing.T) bool {
 	headers := http.Header{}
 
-	headers.Add("Authorization", "ApiKey 123")
+	// CH2 L2 break stuff
+	// headers.Add("Authorization", "ApiKey 123")
 	_, err := GetAPIKey(headers)
 	// t.Logf("validCheck: %v", err)
 
