@@ -35,7 +35,7 @@ func errorCheck(t *testing.T) bool {
 		return false
 	}
 
-	headers.Add("Authorization", "")
+	headers.Add("Authorization", "stuff")
 	_, err = GetAPIKey(headers)
 	// t.Logf("blank: %v", err)
 	if err == nil {
